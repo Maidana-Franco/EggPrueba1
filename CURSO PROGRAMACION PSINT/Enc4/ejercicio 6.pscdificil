@@ -1,0 +1,69 @@
+Algoritmo sin_titulo
+	
+	// "¡Hola! Muchas gracias por cubrirme. Lo principal que debes hacer es completar la hoja de
+	// cálculo de ingresos mensuales. Puedes hacerlo buscando los últimos ingresos publicitarios en los
+	// informes de marketing. Después de hacer todo eso, revisa mi correo electrónico y si hay menos
+	// de 10 correos sin leer revisa mi correo de voz para ver si hay alguna solicitud de los ejecutivos. Si
+	// hay tales solicitudes, hágalas primero a menos que tenga una solicitud de emergencia de otro
+	// departamento. Una vez que hayas terminado con la solicitud de cumplimiento, riegue la planta
+	// de mi escritorio después de apagar la computadora. Ah, espera, debería haber mencionado un
+	// par de cosas: debes iniciar sesión con usuario de administrador para ver los informes de
+	// marketing, y tendrás que enviarme un correo electrónico de actualización justo después de que
+	// termines de manejar las solicitudes. Bueno, gracias de nuevo. ¡Es de gran ayuda! Te debo el
+	// almuerzo cuando regrese."
+	// Nuestra tarea será imprimir por pantalla la lista de tareas en el orden que corresponden para que
+	// luego las podamos realizar. ¿Te animas a colocar las tareas en el orden correcto? Para hacer
+	// esto, debes crear en PSeInt la cantidad de variables que creas correctas y asignarles valor.
+	
+	// iniciar sesión con usuario de administrador para ver los informes de marketing
+	// revisa mi correo electrónico --> y si hay menos de 10 correos --> revisar el buzon de voz
+	//Si hay alguna solicitud de emergencia --> Hacer esa solicitud --> Enviar correo de actualizacion
+	// Sino
+	// buscando los últimos ingresos publicitarios en los informes de marketing
+	// completar la hoja de cálculo de ingresos mensuales
+	// Regar la planta
+	//  Apagar la computadora
+	
+	Definir respuesta Como Caracter
+	Definir num como Entero
+	
+	Escribir "¿Inicio sesión como administrador?"
+	Leer respuesta
+	
+	Si (respuesta = "si") O (respuesta = "Si") Entonces
+		Escribir "¿Hay alguna solicitud de emergencia de otro departamento?"
+		Leer  respuesta 
+		
+		Si (respuesta = "si") O (respuesta = "Si") Entonces
+			Escribir "Debes realizar esta solicitud" 
+			Escribir "Ahora debes de enviar el correo de actualizacion"
+		SiNo
+			Escribir "Ahora debe revisar el correo electronico"
+			Escribir "¿Cuantos mails hay en la bandeja?"
+			Leer num
+			Si num <= 10 Entonces
+				Escribir "Ahora debes escuchar el buzon de voz"
+				Escribir "¿Hay mensajes en el buzon de voz?"
+				Leer respuesta
+				
+				Si (respuesta = "si") O (respuesta = "Si") Entonces
+					Escribir "Responder mensajes"
+					Escribir "Busca los últimos ingresos publicitarios en los informes de marketing"
+					Escribir "Completar la hoja de cálculo de ingresos mensuales"
+					Escribir "Responder los correos recibidos"
+					Escribir "Apagar la computadora"
+					Escribir "Regar la planta"
+				FinSi
+			SiNo
+				Escribir "Busca los últimos ingresos publicitarios en los informes de marketing"
+				Escribir "Completar la hoja de cálculo de ingresos mensuales"
+				Escribir "Responder los correos recibidos"
+				Escribir "Apagar la computadora"
+				Escribir "Regar la planta"
+			FinSi
+		FinSi 
+	SiNo		
+		Escribir "Debes iniciar sesion antes de empezar"
+	FinSi	
+	
+FinAlgoritmo

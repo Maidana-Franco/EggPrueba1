@@ -1,0 +1,17 @@
+Hoy en la segunda parte del tutorial de SSH, vemos 5 comandos avanzados:
+
+- ssh-copy-id
+- ssh -t 
+- ssh -D
+- ssh -X
+- ssh -L / -R
+
+Estos comandos nos van a servir en el día a día de administración de servidores linux. Podemos bajar el server X en la página de Xquartz: https://xquartz.org
+
+Hoy aprendemos aun más comandos de SSH, esta vez a nivel EXPERTO donde probamos saltar de server en server y usamos ssh-agent.
+
+* Archivo de configuración:  ~.ssh/config
+* Comandos usados:
+ssh -t
+ssh -J
+Intérprete ssh: ~C

@@ -1,0 +1,32 @@
+// Escriba un programa que pida una frase o palabra y valide
+// si la primera letra de esa frase es una ?A?. Si la primera
+// letra es una ?A?, se deberá de imprimir un mensaje por pantalla
+// que diga "CORRECTO", en caso contrario, se deberá imprimir "INCORRECTO".
+// Nota: investigar la función Subcadena de PseInt.
+
+
+// Continuando el ejercicio anterior, ahora se pedirá una frase
+// o palabra y se validara si la primera letra de la frase es igual
+// a la última letra de la frase. Se deberá de imprimir un 
+// mensaje por pantalla que diga "CORRECTO", en caso contrario,
+// se deberá imprimir "INCORRECTO".
+
+
+Algoritmo sin_titulo
+	Definir pal, car0, carU Como Caracter
+	
+	Escribir Sin Saltar ('Ingrese palabra: ')
+	Leer pal
+	
+	car0 = Subcadena(pal, 0, 0)
+	
+	carU = Subcadena(pal, Longitud(pal) -1, Longitud(pal)-1)
+	
+	Escribir carU
+	Si car0 == carU Entonces
+		Escribir ('CORRECTO!')
+	SiNo
+		Escribir ('INCORRECTO!')
+	FinSi
+	
+FinAlgoritmo

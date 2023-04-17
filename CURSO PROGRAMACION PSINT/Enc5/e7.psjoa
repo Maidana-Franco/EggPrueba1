@@ -1,0 +1,11 @@
+Algoritmo e7
+	Definir frase Como Caracter
+	Escribir "Ingrese una frase o palabra que inicie y termine con la misma letra"
+	Leer frase
+	//                  Primera posición == Última posición
+	Si (Subcadena(frase, 0, 1)) == (Subcadena(frase, Longitud(frase), (Longitud(frase) + 1))) Entonces
+		Escribir "CORRECTO"
+	SiNo
+		Escribir "INCORRECTO"
+	Fin Si
+FinAlgoritmo
